@@ -147,6 +147,9 @@ function! s:ChangeToRootDirectory()
   else
     call s:ChangeDirectory(root_dir)
   endif
+  "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+  execute 'silent !rm ./.tern-port'
+  "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 endfunction
 
 " For third-parties.  Not used by plugin.
